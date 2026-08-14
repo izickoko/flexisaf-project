@@ -546,7 +546,7 @@ footer {
 
 .footer-links {
     display: flex;
-    gap: 28px;
+    gap: 58px;
 }
 
 .footer-links a {
@@ -660,7 +660,7 @@ footer {
     }
 
     .footer-links {
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: center;
         gap: 14px;
     }
