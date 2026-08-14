@@ -8,8 +8,8 @@
     --text-muted: #7a8aaa;
     --text-accent: #5b7fff;
     --border: #1e2d4d;
-    --font-display: 'Syne', sans-serif;
-    --font-body: 'DM Sans', sans-serif;
+    --font-display: 'Space Grotesk', sans-serif;
+    --font-body: 'Manrope', sans-serif;
 }
 
 /* RESET & BASE */
@@ -85,7 +85,7 @@ nav {
 }
 
 .nav-logo {
-    font-family: var(--font-display);
+    font-family: 'Syne', sans-serif;
     font-size: 22px;
     font-weight: 800;
     color: var(--text-primary);
@@ -674,7 +674,7 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 32px;
+        gap: 20px;
         position: fixed;
         top: 0;
         left: 0;
@@ -683,8 +683,7 @@ footer {
         background: rgba(6, 11, 24, 0.98);
         backdrop-filter: blur(20px);
         z-index: 999;
-        padding: 100px 6% 60px;
-        border-bottom: none;
+        padding: 80px 6% 40px;
     }
 
     .nav-links.nav-open {
@@ -693,8 +692,8 @@ footer {
 
     .nav-links li a {
         font-family: var(--font-display);
-        font-size: 28px;
-        font-weight: 700;
+        font-size: 18px;
+        font-weight: 600;
         color: var(--text-muted);
         transition: color 0.25s ease;
     }
@@ -705,10 +704,10 @@ footer {
 
     .nav-links .nav-cta {
         display: inline-block;
-        margin-top: 12px;
-        font-size: 15px;
-        padding: 14px 36px;
-        border-radius: 8px;
+        margin-top: 8px;
+        font-size: 13px;
+        padding: 11px 28px;
+        border-radius: 6px;
         background: var(--accent);
         color: var(--bg);
         font-family: var(--font-display);
@@ -733,143 +732,7 @@ footer {
         transform: rotate(-45deg) translate(5px, -5px);
     }
 
-    /* hide desktop cta */
     nav > .nav-cta {
         display: none;
-    }
-}
-
-/*  REGISTER CTA */
-
-#register {
-    background: var(--accent);
-    text-align: center;
-    padding: 100px 6%;
-}
-
-.register-inner {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-#register .section-label {
-    color: var(--bg);
-    opacity: 0.7;
-}
-
-#register h2 {
-    color: var(--bg);
-    margin-bottom: 16px;
-}
-
-.register-sub {
-    color: var(--bg);
-    opacity: 0.75;
-    font-size: 1rem;
-    line-height: 1.7;
-    margin-bottom: 36px;
-    max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#register .btn-primary {
-    background: var(--bg);
-    color: var(--accent);
-    font-size: 15px;
-    padding: 16px 36px;
-    border-radius: 8px;
-    display: inline-block;
-}
-
-#register .btn-primary:hover {
-    opacity: 0.9;
-    transform: translateY(-2px);
-}
-
-/* CONTACT & LOCATION */
-
-#contact {
-    background: var(--bg-surface);
-    border-top: 1px solid var(--border);
-}
-
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: center;
-}
-
-.contact-info h2 {
-    margin-bottom: 32px;
-}
-
-.contact-details {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.contact-item {
-    border-left: 2px solid var(--accent);
-    padding-left: 16px;
-}
-
-.contact-label {
-    font-size: 10px;
-    font-weight: 600;
-    letter-spacing: .12em;
-    text-transform: uppercase;
-    color: var(--accent);
-    display: block;
-    margin-bottom: 4px;
-}
-
-.contact-item p {
-    font-size: 14px;
-    color: var(--text-muted);
-    line-height: 1.6;
-}
-
-.map-placeholder {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-}
-
-.map-placeholder span {
-    font-family: var(--font-display);
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--text-primary);
-}
-
-.map-placeholder p {
-    font-size: 12px;
-    color: var(--text-muted);
-}
-
-/* Contact responsive */
-@media (max-width: 1024px) {
-    .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 48px;
-    }
-}
-
-@media (max-width: 768px) {
-    #register {
-        padding: 70px 5%;
-    }
-
-    .map-placeholder {
-        height: 200px;
     }
 }
