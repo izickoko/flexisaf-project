@@ -18,6 +18,7 @@
             <li><a href="#">Speakers</a></li>
             <li><a href="#">Schedule</a></li>
             <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
         <a href="#" class="nav-cta">Register Now</a>
         <div class="hamburger">
@@ -207,6 +208,50 @@
         </div>
     </section>
 
+    <!-- REGISTER CTA -->
+    <section id="register">
+        <div class="register-inner">
+           <p class="section-label">Limited Spots</p>
+           <h2>Ready to join<br>the wave?</h2>
+           <p class="register-sub">Three days of learning, building, and connecting, don't miss your spot. Early bird registration closes February 1st.</p>
+        <a href="#" class="btn-primary">Register Now — It's Free</a>
+    </div>
+    </section>
+
+    <!-- CONTACT & LOCATION -->
+    <section id="contact">
+        <div class="contact-grid">
+            <div class="contact-info">
+               <p class="section-label">Find Us</p>
+               <h2>Come in<br>person.</h2>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <span class="contact-label">Venue</span>
+                    <p>Eko Convention Centre</p>
+                    <p>Victoria Island, Lagos</p>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Date</span>
+                    <p>March 14 — 16, 2026</p>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Email</span>
+                    <p>hello@mindwavefest.com</p>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Phone</span>
+                    <p>+234 801 XXX XXXX</p>
+                </div>
+            </div>
+        </div>
+        <div class="contact-map">
+            <div class="map-placeholder">
+                <span>Victoria Island, Lagos</span>
+                <p>Map embed goes here</p>
+            </div>
+        </div>
+    </div>
+    </section>
 
     <footer>
         <div class="footer-top">
@@ -218,21 +263,30 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2025 Mindwave Festival. Lagos, Nigeria.</p>
-            <p>Designed by Isaac</p>
+            <p>© 2026 Mindwave Festival. Lagos, Nigeria.</p>
+            <p>Designed by Isaac Ewege</p>
         </div>
     </footer>
 
     <script>
         const hamburger = document.querySelector('.hamburger');
         const navLinks = document.querySelector('.nav-links');
-        const navCta = document.querySelector('.nav-cta');
 
         hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        navLinks.classList.toggle('nav-open');
-        navCta.classList.toggle('nav-open');
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('nav-open');
+            document.body.style.overflow = 
+            navLinks.classList.contains('nav-open') ? 'hidden' : '';
         });
-    </script>
+
+        // close menu when a link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('nav-open');
+            document.body.style.overflow = '';
+          });
+        });
+</script>
 </body>
 </html>
