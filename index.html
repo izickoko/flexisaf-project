@@ -222,5 +222,17 @@
             <p>Designed by Isaac</p>
         </div>
     </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        const navCta = document.querySelector('.nav-cta');
+
+        hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('nav-open');
+        navCta.classList.toggle('nav-open');
+        });
+    </script>
 </body>
 </html>
