@@ -10,7 +10,7 @@ Figam Design: https://www.figma.com/design/JTPAqTB533jHWHelvpYWqt/Fip-Project-Pr
 
 Live Website: https://flexisaf-project-beige.vercel.app/
 
-Design Presentation: https://github.com/izickoko/flexisaf-project/edit/main/Mindwave_Digital_Learning_Festival_Design_Presentation.pdf
+Design Presentation: 
 
 Colour Palette: https://coolors.co/060b18-0d1526-111d35-5b7fff-f0f4ff-7a8aaa-1e2d4d
 
