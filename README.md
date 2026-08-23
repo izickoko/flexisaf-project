@@ -14,4 +14,4 @@ Design Presentation: Design presentation PDF is included in the repository. Plea
 
 Colour Palette: https://coolors.co/060b18-0d1526-111d35-5b7fff-f0f4ff-7a8aaa-1e2d4d
 
-Behance: 
+Behance: https://www.behance.net/gallery/254689331/MindWave-Flexisaf-Intern-Project
